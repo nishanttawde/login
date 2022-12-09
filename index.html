@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- [Omkar]: What is the use of this tag? Is IE still in use? -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- [Omkar]: What is the reason of viewport? -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validated Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- [Omkar]: format code -->
     <div class="container">
         <h1 class="label">User Login</h1>
+        <!-- [Omkar]: Remove form and do it without it -->
         <form class="login_form" action="homes.html" method="post" name="form" onsubmit="return validated()">
         <div class="font">Email or Phone</div>
         <input autocomplete="off" type="text" name="email">
@@ -17,9 +21,11 @@
         <div class="font font2">Password</div>
         <input type="password" name="password">
         <div id="pass_error">Please fill up your Password</div>
+        <!-- [Omkar]: Don't use submit. Use onClick instead. Remove form component -->
         <button type="submit">Login</button>
         </form>
     </div>
+    <!-- [Omkar]: Why is this at bottom? -->
     <script src="validate.js"></script>
 </body>
 </html>
